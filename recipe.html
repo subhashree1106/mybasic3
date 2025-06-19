@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="recipe.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+
+  <h1>My Recipe Book</h1>
+
+  <!-- Add Recipe Form -->
+  <section id="add-recipe">
+    <h2>Add a New Recipe</h2>
+    <form id="recipe-form">
+      <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+      <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+      <textarea id="steps" placeholder="Preparation Steps" required></textarea>
+      <input type="file" id="recipe-image" accept="image/*" required />
+      <button type="submit">Add Recipe</button>
+    </form>
+  </section>
+
+  <!-- Search Recipes -->
+  <section id="search-section">
+    <input type="text" id="search-input" placeholder="Search recipes..." />
+  </section>
+
+  <!-- Display Recipes -->
+  <section id="recipe-list">
+    <h2>All Recipes</h2>
+    <div id="recipes-container"></div>
+  </section>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
